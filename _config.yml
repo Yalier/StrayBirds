@@ -116,7 +116,7 @@ disqus:
 
 username: Yalier
 baseurl: /blog
-markdown: redcarpet
+markdown: kramdown
 safe: false
 highlighter: pygments
 title: iOS整理

@@ -13,7 +13,8 @@ comments: false
 
 ### UIPickerView的代理方法
 
----Delegate
+- Delegate
+
 ‘
 每组的宽度
 1. - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component
@@ -48,7 +49,8 @@ comments: false
 ‘
 
 
----DataSource
+- DataSource
+
 '
 有多少组
 1. - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView

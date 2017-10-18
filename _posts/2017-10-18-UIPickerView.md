@@ -1,6 +1,6 @@
 ---
 layout: post
 title: UIPickerView
-comments: false
 category: 技术
+comments: false
 ---

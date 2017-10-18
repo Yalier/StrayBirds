@@ -28,7 +28,7 @@ comments: false
 
 2.b注册通知，加入观察者：
 
--(void)addObserver:(id)observer selector:(SEL)aSelector name:(nullable NSString *)aName object:(nullable id)anObject;
+  -(void)addObserver:(id)observer selector:(SEL)aSelector name:(nullable NSString *)aName object:(nullable id)anObject;
  //@selector中为回调方法，在本类中对通知进行相应的处理，name为通知名称、object为对象；
 
 * object == nil，那么客户对象（self）将收到任何对象发出NSWindowDidBecomeMainNotification的通知消息；

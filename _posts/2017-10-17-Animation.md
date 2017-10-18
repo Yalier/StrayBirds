@@ -99,7 +99,7 @@ Bezier曲线动画:
 
 “
 
-//添加二次 三次贝塞尔曲线
+// 添加二次 三次贝塞尔曲线
 
     UIBezierPath *bezierPath = [UIBezierPath bezierPath];
     bezierPath.lineWidth = 2;
@@ -110,10 +110,10 @@ Bezier曲线动画:
     [bezierPath addArcWithCenter:CGPointMake(300, 400) radius:50 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
     
     
-    //做动画的layer
     
-CALayer* aniLayer = [CALayer layer];
-
+ // 做动画的layer
+    
+    CALayer* aniLayer = [CALayer layer];
     aniLayer.backgroundColor = [UIColor redColor].CGColor;
     aniLayer.position = CGPointMake(10, 520);
     aniLayer.bounds = CGRectMake(0, 0, 8, 8);
@@ -121,10 +121,10 @@ CALayer* aniLayer = [CALayer layer];
     [self.view.layer addSublayer:aniLayer];
     
     
-    //CAKeyframeAnimation动画
     
- CAKeyframeAnimation* keyFrameAni = [CAKeyframeAnimation animationWithKeyPath:@"position"];
- 
+ //CAKeyframeAnimation动画
+    
+    CAKeyframeAnimation* keyFrameAni = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     keyFrameAni.repeatCount = NSIntegerMax;
     keyFrameAni.path = bezierPath.CGPath;
     keyFrameAni.duration = 15;

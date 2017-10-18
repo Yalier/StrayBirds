@@ -13,7 +13,8 @@ self.hidesBottomBarWhenPushed = YES;
 
 
 在基类中隐藏所有tabbar
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     if(self.viewControllers.count)
     {

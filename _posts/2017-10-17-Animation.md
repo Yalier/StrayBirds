@@ -94,6 +94,42 @@ Bezier曲线动画:
 
 -(void)stroke; //绘制贝塞尔曲线边框
 
-
 "
+
+
+“
+
+//添加二次 三次贝塞尔曲线
+
+    UIBezierPath *bezierPath = [UIBezierPath bezierPath];
+    bezierPath.lineWidth = 2;
+    [bezierPath moveToPoint:CGPointMake(10, 520)];
+    [bezierPath addLineToPoint:CGPointMake(50, 530)];
+    [bezierPath addQuadCurveToPoint:CGPointMake(100, 510) controlPoint:CGPointMake(80, 650)];
+    [bezierPath addCurveToPoint:CGPointMake(200, 530) controlPoint1:CGPointMake(130, 600) controlPoint2:CGPointMake(170, 400)];
+    [bezierPath addArcWithCenter:CGPointMake(300, 400) radius:50 startAngle:0 endAngle:M_PI * 2 clockwise:YES];
+    
+    
+    //做动画的layer
+    
+CALayer* aniLayer = [CALayer layer];
+
+    aniLayer.backgroundColor = [UIColor redColor].CGColor;
+    aniLayer.position = CGPointMake(10, 520);
+    aniLayer.bounds = CGRectMake(0, 0, 8, 8);
+    aniLayer.cornerRadius = 4;
+    [self.view.layer addSublayer:aniLayer];
+    
+    
+    //CAKeyframeAnimation动画
+    
+ CAKeyframeAnimation* keyFrameAni = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+ 
+    keyFrameAni.repeatCount = NSIntegerMax;
+    keyFrameAni.path = bezierPath.CGPath;
+    keyFrameAni.duration = 15;
+    keyFrameAni.beginTime = CACurrentMediaTime() + 1;
+    [aniLayer addAnimation:keyFrameAni forKey:@"keyFrameAnimation"];
+
+”
     

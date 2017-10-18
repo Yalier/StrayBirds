@@ -20,6 +20,7 @@ Rotation---翻转
 [self.view layoutIfNeeded];
 
 
+
 UIView动画:
 
 "
@@ -43,6 +44,7 @@ UIView动画:
 Bezier曲线动画:
     
 "
+* 初始化
 
 +(instancetype)bezierPath;   //初始化贝塞尔曲线(无形状)
 
@@ -59,6 +61,7 @@ Bezier曲线动画:
 +(instancetype)bezierPathWithCGPath:(CGPathRef)CGPath; //根据CGPathRef绘制贝塞尔曲线
 
 
+* 添加线的方法
 
 -(void)moveToPoint:(CGPoint)point;  //贝塞尔曲线开始的点
 
@@ -75,6 +78,7 @@ Bezier曲线动画:
 -(void)removeAllPoints; //去掉所有曲线点
 
 
+* 相关属性
 
 @property(nonatomic) CGFloat lineWidth;  //边框宽度
 
@@ -89,6 +93,7 @@ Bezier曲线动画:
 -(void)fill;  //填充贝塞尔曲线内部
 
 -(void)stroke; //绘制贝塞尔曲线边框
+
 
 "
     

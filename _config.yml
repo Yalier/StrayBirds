@@ -118,7 +118,7 @@ username: Yalier
 baseurl: /blog
 markdown: kramdown
 safe: false
-highlighter: pygments
+highlighter: rouge
 title: iOS整理
 description: 人生到处知何似，应似飞鸿踏雪泥
 theme: kunka

@@ -11,11 +11,11 @@ comments: false
 
 1.a作为发布者，发送消息下面三种方法：
 
-    - (void)postNotification:(NSNotification *)notification;
+    -(void)postNotification:(NSNotification *)notification;
 
-    - (void)postNotificationName:(NSString *)aName object:(id)anObject;
+    -(void)postNotificationName:(NSString *)aName object:(id)anObject;
 
-    - (void)postNotificationName:(NSString *)aName object:(id)anObject userInfo:(NSDictionary *)aUserInfo;
+    -(void)postNotificationName:(NSString *)aName object:(id)anObject userInfo:(NSDictionary *)aUserInfo;
     
 * postNotificationName:指定消息名称；
 
@@ -28,7 +28,7 @@ comments: false
 
 2.b注册通知，加入观察者：
 
-- (void)addObserver:(id)observer selector:(SEL)aSelector name:(nullable NSString *)aName object:(nullable id)anObject;
+-(void)addObserver:(id)observer selector:(SEL)aSelector name:(nullable NSString *)aName object:(nullable id)anObject;
  //@selector中为回调方法，在本类中对通知进行相应的处理，name为通知名称、object为对象；
 
 * object == nil，那么客户对象（self）将收到任何对象发出NSWindowDidBecomeMainNotification的通知消息；

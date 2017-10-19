@@ -27,7 +27,6 @@ Rotation---翻转
 "
 
           //UIView基本动画头尾式
-          
           [UIView beginAnimations:nil context:nil];
           [UIView setAnimationDuration:2.0];
 

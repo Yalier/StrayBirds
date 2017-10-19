@@ -26,9 +26,9 @@ Rotation---翻转
 
 "
 
-          //基本动画
+          //UIView基本动画头尾式
           
-          [UIView beginAnimations:nil context:nil];
+          [UIView beginAnimations:nil context:nil];
           [UIView setAnimationDuration:2.0];
 
           //执行动画的代码块
@@ -42,7 +42,7 @@ Rotation---翻转
 
 "
 
-//UIView动画:
+//UIView动画 Block:
 
        [UIView animateWithDuration:1 delay:1 options:UIViewAnimationOptionTransitionNone animations:^{
         CGPoint p = self.right.center;

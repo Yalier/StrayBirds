@@ -5,6 +5,20 @@ category: 技术
 comments: false
 ---
 
+    "
+
+    //刷新所有组
+    - (void)reloadAllComponents;
+    //刷新第几组
+    - (void)reloadComponent:(NSInteger)component;
+    //滚动到第几组第几行
+    - (void)selectRow:(NSInteger)row inComponent:(NSInteger)component animated:(BOOL)animated;  
+    //选择第几组的第几个
+    - (NSInteger)selectedRowInComponent:(NSInteger)component;  
+ 
+ 
+    "
+
 ### UIPickerView的两个代理
 
 * UIPickerViewDelegate

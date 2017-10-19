@@ -24,6 +24,21 @@ Rotation---翻转
 
 "
 
+"
+
+          //基本动画
+          
+          [UIView beginAnimations:nil context:nil];
+          [UIView setAnimationDuration:2.0];
+
+          //执行动画的代码块
+
+          [UIView commitAnimations];
+
+"
+
+
+
 
 "
 

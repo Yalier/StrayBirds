@@ -1,5 +1,5 @@
 ---
-title: UIAlerController
+title: UIAlertController
 layout: post
 category: 技术
 comments: false

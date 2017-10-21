@@ -10,4 +10,4 @@ comments: false
         UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"ViewController"];
         
         //返回xib
-        [[NSBundle mainBundle] loadNibNamed:@"xibView" owner:nil options:nil].firstObject;
+        xibView *view = [[NSBundle mainBundle] loadNibNamed:@"xibView" owner:nil options:nil].firstObject;

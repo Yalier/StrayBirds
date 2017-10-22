@@ -41,7 +41,7 @@ comments: false
 		![图片](http://upload-images.jianshu.io/upload_images/2059483-f6dee2f90f7c0e76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 		
 		
-		5.代码框
+		5.代码框 用两个'将代码框起来
 		
 		'
 		 
@@ -70,4 +70,4 @@ comments: false
 		|------|------|
 		|张三  | 300  |
 		|李四  | 10   |
-	    |王五  | 70   |
+	   	|王五  | 70   |

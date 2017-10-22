@@ -1,3 +1,17 @@
+---
+title: mackDown的基本使用
+layout: post
+category: 技术
+comments: false
+
+---
+
+
+
+
+
+
+
 * 标题
 
 #h1

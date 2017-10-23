@@ -25,3 +25,20 @@ comments: false
     
     //结束动画 stopAnimating
     [self.myIV stopAnimating];
+    
+    * 注
+    	//这个方法会有图片缓存
+		[UIImage imageNamed:imageStr];
+		
+		
+		//获取图片路径
+		NSString *path = [[NSBundle mainBundle] pathForResource:imageStr ofType:@"png"];
+
+		//这个方法没有图片缓存
+		[UIImage imageWithContentsOfFile:path];
+		
+		
+		//执行完动画后，释放掉数组内存
+        //[self.myIV performSelector:@selector(setAnimationImages:) withObject:nil afterDelay:self.myIV.animationDuration];
+        [self.myIV performSelector:@selector(setAnimationImages:) withObject:nil];
+   	

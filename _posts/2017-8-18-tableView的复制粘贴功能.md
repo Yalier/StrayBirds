@@ -1,10 +1,14 @@
 ---
-title: TableView的复制，粘贴功能
-layout :post
+
+title: TableView的复制/粘贴功能
+layout: post
 category: 技术
 comments: false
 
+
 ---
+
+
 
 
 	tableView中的复制粘贴功能，就在它自带的代理方法中就有

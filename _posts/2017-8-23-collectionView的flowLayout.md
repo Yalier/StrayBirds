@@ -8,10 +8,10 @@ comments: false
 
 "
 
-		 //通过属性设置
-		@property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *myFlowLayout;
+            //通过属性设置
+	    @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *myFlowLayout;
 	
-	 	 //每个item的大小
+	    //每个item的大小
 	    self.myFlowLayout.itemSize = CGSizeMake(50, 50);
 	    //最小列间距
 	    self.myFlowLayout.minimumInteritemSpacing = 10;
@@ -25,7 +25,7 @@ comments: false
 		  //通过代理设置
 		  <UICollectionViewDelegateFlowLayout>
 		  
-	    - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
+	        - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
 		- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section;
 		- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section;
 		- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section;

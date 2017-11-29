@@ -159,4 +159,30 @@ comments: fasle
 	
 	
 	
+	
+	
+	//操作之间的依赖关系  可以跨队列
+	
+    NSBlockOperation *ll = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"1");
+    }];
+    NSBlockOperation *ll2 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"2");
+    }];
+    
+    NSBlockOperation *ll3 = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"3");
+    }];
+    
+    [ll3 addDependency:ll];
+    [ll2 addDependency:ll3];
+    
+    NSOperationQueue *qu = [[NSOperationQueue alloc] init];
+    [qu addOperations:@[ll, ll2] waitUntilFinished:NO];
+    
+    
+    NSOperationQueue *qu2 = [[NSOperationQueue alloc] init];
+    [qu2 addOperation:ll3];
+	
+	
 	@end

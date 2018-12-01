@@ -1,9 +1,9 @@
 ---
 
-title:bitbucket配置密钥
-layout:post
-comments:false
-category:技术
+title: bitbucket配置密钥
+layout: post
+comments: false
+category: 技术
 
 ---
 
